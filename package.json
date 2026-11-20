@@ -1,0 +1,31 @@
+{
+  "name": "observability-project",
+  "version": "1.0.0",
+  "description": "Express and MongoDB observability with OpenTelemetry and Jaeger",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node --require ./tracing.js index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HadenUFL/observability-project.git"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "dependencies": {
+    "@opentelemetry/api": "1.9.0",
+    "@opentelemetry/api-logs": "0.222.0",
+    "@opentelemetry/auto-instrumentations-node": "0.80.0",
+    "@opentelemetry/exporter-trace-otlp-http": "0.222.0",
+    "@opentelemetry/resources": "2.11.0",
+    "@opentelemetry/sdk-logs": "0.222.0",
+    "@opentelemetry/sdk-metrics": "2.11.0",
+    "@opentelemetry/sdk-node": "0.222.0",
+    "@opentelemetry/sdk-trace-node": "2.11.0",
+    "@opentelemetry/semantic-conventions": "^1.29.0",
+    "express": "^5.1.0",
+    "mongodb": "^6.0.0"
+  }
+}
